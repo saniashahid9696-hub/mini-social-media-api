@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from app.db.session import engine, Base
 
-# You must include 'api' in the path now
+
 from app.routes.user import router as user_router
 from app.routes.post import router as post_router
 
-# Import models so SQLAlchemy creates them
+
 from app.models.user import User
 from app.models.post import Post
 
